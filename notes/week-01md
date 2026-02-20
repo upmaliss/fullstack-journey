@@ -1,0 +1,16 @@
+# CSS pseudo klases
+
+## Kas tas ir?
+Pseudo klases maina elementu izskatu noteiktos stāvokļos.
+
+## Piemēri
+
+- :link - saite kas vēl nav apmeklēta. Parastā zilā saite ko redzi pirmo reizi.
+- :visited - saite kas jau ir apmeklēta. Pārlūks atceras un parāda citā krāsā (parasti violetā).
+- :hover - kad uzved peli virsū. Piemēram saite kļūst pasvītrota vai maina krāsu.
+- :active - tieši tajā momentā kad klikšķini. Poga "nospiestā" stāvoklī — ilgst tikai millisekundi.
+
+## Ko es šodien iemācījos
+
+Šim klasēm ir jābūt pietakstītām tieši šādā secībā LVHA ((Love and HAte 😄)
+Ja raksti CSS citā secībā, stili var "pārrakstīt" viens otru un nestrādāt pareizi.
