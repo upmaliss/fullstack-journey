@@ -44,6 +44,8 @@ Atstarpe starp elementiem. Nepalielina elementa izmēru.
     padding: 0;
     box-sizing: border-box;
 }
+
+Bez tā — elements ar width: 200px un padding: 20px patiesībā būs 240px plats. Ar border-box paliek 200px.
 ```
 
 ### Jautājumi sev
