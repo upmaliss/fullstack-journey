@@ -1,4 +1,6 @@
-# CSS pseudo klases
+# CSS pamati
+
+## CSS pseudo klases
 
 ## Kas tas ir?
 Pseudo klases maina elementu izskatu noteiktos stāvokļos.
@@ -14,3 +16,51 @@ Pseudo klases maina elementu izskatu noteiktos stāvokļos.
 
 Šim klasēm ir jābūt pietakstītām tieši šādā secībā LVHA ((Love and HAte 😄)
 Ja raksti CSS citā secībā, stili var "pārrakstīt" viens otru un nestrādāt pareizi.
+
+
+## Day 4 — Box Model, Margin, Padding
+
+### Box Model
+Katrs HTML elements ir kaste ar 4 slāņiem:
+- **Content** — saturs
+- **Padding** — atstarpe iekšpusē
+- **Border** — apmale
+- **Margin** — atstarpe ārpusē
+
+### Padding
+Atstarpe starp saturu un apmali. Palielina elementa izmēru.
+
+### Margin
+Atstarpe starp elementiem. Nepalielina elementa izmēru.
+
+### Galvenā atšķirība
+- Padding → iekšpuse → fona krāsa to aizpilda
+- Margin → ārpuse → vienmēr caurspīdīgs
+
+### Global Reset
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+```
+
+### Jautājumi sev
+- Kāpēc lieto box-sizing: border-box?
+- Kāda atšķirība starp margin un padding?
+
+
+
+### Margin Collapsing
+Kad divi elementi ir viens virs otra, to vertikālie margin **nesaskaita** — 
+lielākais uzvar.
+
+Piemērs:
+- Pirmajam elementam margin-bottom: 30px
+- Otrajam elementam margin-top: 20px
+- Rezultāts: atstarpe ir 30px, nevis 50px
+
+Svarīgi: margin collapsing notiek tikai **vertikāli** (augša/apakša).
+Horizontāli (kreisā/labā) margin vienmēr saskaita.
+```
